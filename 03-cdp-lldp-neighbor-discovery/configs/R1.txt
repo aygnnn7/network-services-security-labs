@@ -1,0 +1,20 @@
+hostname R1
+!
+lldp run
+!
+interface GigabitEthernet0/0
+ ip address 10.0.13.1 255.255.255.252
+!
+interface GigabitEthernet0/1
+ ip address 10.0.12.1 255.255.255.252
+!
+interface GigabitEthernet0/2
+ ip address 192.168.1.254 255.255.255.0
+ no cdp enable
+!
+router eigrp 1
+ network 0.0.0.0
+!
+no cdp run
+!
+end
