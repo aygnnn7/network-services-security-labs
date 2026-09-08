@@ -1,0 +1,26 @@
+hostname R2
+
+interface GigabitEthernet0/0
+ ip address 192.168.1.254 255.255.255.0
+ ip access-group TO_192.168.1.0/24 out
+!
+interface GigabitEthernet0/1
+ ip address 192.168.2.254 255.255.255.0
+ ip access-group TO_192.168.2.0/24 out
+!
+interface Serial0/0/0
+ ip address 203.0.113.2 255.255.255.252
+!
+router ospf 1
+ log-adjacency-changes
+ network 203.0.113.0 0.0.0.3 area 0
+ network 192.168.0.0 0.0.255.255 area 0
+!
+ip access-list standard TO_192.168.1.0/24
+ permit host 172.16.2.1
+ permit host 172.16.1.1
+ deny any
+!
+ip access-list standard TO_192.168.2.0/24
+ deny 172.16.2.0 0.0.0.255
+ permit any
