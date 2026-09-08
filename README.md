@@ -5,3 +5,4 @@ I use Cisco Packet Tracer to practice network services and network security cont
 ## Labs
 
 - [Standard ACL Traffic Filtering with OSPF](01-standard-acl-traffic-filtering/)
+- [Extended ACL Traffic Filtering](02-extended-acl-traffic-filtering/)
