@@ -1,0 +1,27 @@
+hostname R1
+!
+clock timezone CET 1
+!
+interface GigabitEthernet0/0
+ ip address 203.0.113.1 255.255.255.252
+!
+interface GigabitEthernet0/1
+ ip address 192.168.12.1 255.255.255.252
+!
+interface GigabitEthernet0/2
+ ip address 192.168.13.1 255.255.255.252
+!
+router ospf 1
+ log-adjacency-changes
+ network 0.0.0.0 255.255.255.255 area 0
+!
+ip route 0.0.0.0 0.0.0.0 203.0.113.2
+!
+ntp authentication-key 1 md5 <REDACTED>
+ntp authenticate
+ntp trusted-key 1
+ntp server 1.1.1.1
+ntp master
+ntp update-calendar
+!
+end
