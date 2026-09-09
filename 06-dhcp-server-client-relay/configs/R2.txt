@@ -1,0 +1,32 @@
+hostname R2
+
+ip dhcp excluded-address 192.168.1.1 192.168.1.10
+ip dhcp excluded-address 192.168.2.1 192.168.2.10
+ip dhcp excluded-address 203.0.113.1
+!
+ip dhcp pool POOL1
+ network 192.168.1.0 255.255.255.0
+ default-router 192.168.1.1
+ dns-server 8.8.8.8
+ domain-name mylab.com
+!
+ip dhcp pool POOL2
+ network 192.168.2.0 255.255.255.0
+ default-router 192.168.2.1
+ dns-server 8.8.8.8
+ domain-name mylab.com
+!
+ip dhcp pool POOL3
+ network 203.0.113.0 255.255.255.252
+!
+interface GigabitEthernet0/0
+ ip address 203.0.113.1 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ ip address 192.168.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+ip route 192.168.1.0 255.255.255.0 203.0.113.2
