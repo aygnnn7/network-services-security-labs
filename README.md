@@ -1,6 +1,6 @@
 # Network Services and Security Labs
 
-I use Cisco Packet Tracer to practice network services and network security controls. These labs focus on traffic filtering, access policies, device discovery, time synchronization, DNS name resolution, DHCP services, SNMP-based network management, and related infrastructure services.
+I use Cisco Packet Tracer to practice network services and network security controls. These labs focus on traffic filtering, access policies, device discovery, time synchronization, DNS name resolution, DHCP services, SNMP-based network management, Syslog logging, and related infrastructure services.
 
 ## Labs
 
@@ -11,6 +11,7 @@ I use Cisco Packet Tracer to practice network services and network security cont
 - [DNS and Hostname Resolution](05-dns-hostname-resolution/)
 - [DHCP Server, Client, and Relay](06-dhcp-server-client-relay/)
 - [SNMP Monitoring and Management](07-snmp-monitoring-management/)
+- [Syslog Logging and Monitoring](08-syslog-logging-monitoring/)
 
 ## Learning Resources
 
