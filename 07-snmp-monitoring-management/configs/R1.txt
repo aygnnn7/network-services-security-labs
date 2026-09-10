@@ -1,0 +1,11 @@
+hostname R44
+!
+interface GigabitEthernet0/0
+ ip address 192.168.1.254 255.255.255.0
+ duplex auto
+ speed auto
+!
+snmp-server community <REDACTED_RW> RW
+snmp-server community <REDACTED_RO> RO
+!
+end
