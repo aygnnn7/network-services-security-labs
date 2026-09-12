@@ -1,0 +1,18 @@
+hostname R1
+
+boot system flash c2900-universalk9-mz.SPA.155-3.M4a.bin
+
+interface GigabitEthernet0/0
+ ip address 192.168.12.1 255.255.255.252
+ duplex auto
+ speed auto
+
+interface GigabitEthernet0/1
+ ip address 10.0.0.254 255.255.255.0
+ duplex auto
+ speed auto
+
+router ospf 1
+ log-adjacency-changes
+ network 192.168.12.0 0.0.0.3 area 0
+ network 10.0.0.0 0.0.0.255 area 0

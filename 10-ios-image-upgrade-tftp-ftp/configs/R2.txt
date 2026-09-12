@@ -1,0 +1,15 @@
+hostname R2
+
+boot system flash c2900-universalk9-mz.SPA.155-3.M4a.bin
+
+ip ftp username <REDACTED>
+ip ftp password <REDACTED>
+
+interface GigabitEthernet0/0
+ ip address 192.168.12.2 255.255.255.252
+ duplex auto
+ speed auto
+
+router ospf 1
+ log-adjacency-changes
+ network 192.168.12.0 0.0.0.3 area 0
