@@ -1,6 +1,6 @@
 # Network Services and Security Labs
 
-I use Cisco Packet Tracer to practice network services, network security controls, and device management tasks. These labs focus on traffic filtering, access policies, secure remote device access, device discovery, time synchronization, DNS name resolution, DHCP services, NAT address translation and PAT, SNMP-based network management, Syslog logging, IOS image transfer and upgrades, and related infrastructure services.
+I use Cisco Packet Tracer to practice network services, network security controls, and device management tasks. These labs focus on traffic filtering, access policies, secure remote device access, device discovery, time synchronization, DNS name resolution, DHCP services, DHCP snooping, Dynamic ARP Inspection (DAI), NAT address translation and PAT, SNMP-based network management, Syslog logging, IOS image transfer and upgrades, and related infrastructure services.
 
 ## Labs
 
@@ -17,6 +17,7 @@ I use Cisco Packet Tracer to practice network services, network security control
 - [Static NAT Address Translation](11-static-nat-address-translation/)
 - [Dynamic NAT and PAT Address Translation](12-dynamic-nat-pat-address-translation/)
 - [DHCP Snooping and Option 82 Troubleshooting](13-dhcp-snooping-option-82-troubleshooting/)
+- [Dynamic ARP Inspection with DHCP Snooping](14-dynamic-arp-inspection-dhcp-snooping/)
 
 ## Learning Resources
 
