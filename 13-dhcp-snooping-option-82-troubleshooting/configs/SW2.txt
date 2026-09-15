@@ -1,0 +1,14 @@
+hostname SW2
+
+ip dhcp snooping vlan 1
+no ip dhcp snooping information option
+ip dhcp snooping
+
+interface FastEthernet0/1
+
+interface FastEthernet0/2
+
+interface FastEthernet0/3
+
+interface GigabitEthernet0/1
+ ip dhcp snooping trust

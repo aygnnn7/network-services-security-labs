@@ -16,6 +16,7 @@ I use Cisco Packet Tracer to practice network services, network security control
 - [IOS Image Upgrade with TFTP and FTP](10-ios-image-upgrade-tftp-ftp/)
 - [Static NAT Address Translation](11-static-nat-address-translation/)
 - [Dynamic NAT and PAT Address Translation](12-dynamic-nat-pat-address-translation/)
+- [DHCP Snooping and Option 82 Troubleshooting](13-dhcp-snooping-option-82-troubleshooting/)
 
 ## Learning Resources
 
